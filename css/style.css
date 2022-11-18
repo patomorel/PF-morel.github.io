@@ -43,7 +43,7 @@ body {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 250px;
-    background-image: url("/images/banner-home.png");
+    background-image: url("../images/banner-home.png");
     background-size: 100% 100%;
     font-size: 40px;
 
@@ -237,7 +237,7 @@ body {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 250px;
-    background-image: url("/images/banner-contacto-estrategia.png");
+    background-image: url("../images/banner-contacto-estrategia.png");
     background-size: 100% 100%;
     font-size: 40px;
 }
@@ -246,7 +246,7 @@ body {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 250px;
-    background-image: url("/images/banner-nosotros.jpeg");
+    background-image: url("../images/banner-nosotros.jpeg");
     background-size: 100% 100%;
     font-size: 40px;
 }
@@ -292,7 +292,7 @@ body {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 250px;
-    background-image: url(/images/banner-precio-3.jpeg);
+    background-image: url("../images/banner-precio-3.jpeg");
     background-size: 100% 100%;
     font-size: 40px;
 }
@@ -301,7 +301,7 @@ body {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 250px;
-    background-image: url(/images/banner-servicios-2.jpeg);
+    background-image: url("../images/banner-servicios-2.jpeg");
     background-size: 100% 100%;
     font-size: 40px;
 }
