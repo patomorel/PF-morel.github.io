@@ -182,7 +182,7 @@ body {
     "logo menu rrss"
     "susc form form";
     gap: 5px;
-    height: 100vh;
+    height: 200px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
@@ -200,9 +200,9 @@ body {
 .footer-menu nav ul li a{
     display: flex;
     text-decoration: none;
-    margin: 15px;
+    margin: 5px;
     background-color: #8f00ff;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
     color: white;
 }
