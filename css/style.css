@@ -64,10 +64,13 @@ body {
     background: #444;
 }
 
-.testimonio {
-    font-size: 40px;
+.testimonio .test-title {
+    font-size: 60px;
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, aqua, yellow);
+
 }
 #gridtest {
     display: grid;
@@ -84,18 +87,29 @@ body {
     width: auto;
     max-width: 100px;
     max-height: 100px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 #gridtest .icon-testimonio{
     justify-content: space-between;
 }
-#gridtest h3 {
-    background-color: aquamarine;
+#gridtest .test-name {
     border-radius: 5px;
     padding: 10px;
+    background-image: radial-gradient(yellow, aqua);
 }
 #gridtest p{
     text-align: justify;
-    background-color: aqua;
+    background-color: turquoise;
     border-radius: 5px;
     padding: 10px
 }
@@ -145,6 +159,7 @@ body {
     width: auto;
     max-width: 150px;
     max-height: 150px;
+
 }
 #gridhacemos .icon-hacemos{
     justify-content: space-between;
@@ -153,14 +168,16 @@ body {
     max-width: 100px;
     max-height: 100px;
 }
+
 #gridhacemos h3 {
     background-color: aquamarine;
     border-radius: 5px;
     padding: 10px;
+    background-image: linear-gradient(to left, aqua, yellow);
 }
 #gridhacemos p{
     text-align: justify;
-    background-color: aqua;
+    background-color: turquoise;
     border-radius: 5px;
     padding: 10px
  }
@@ -181,17 +198,17 @@ body {
     grid-template-areas: 
     "logo menu rrss"
     "susc form form";
-    gap: 5px;
+    gap: 0;
     height: 200px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 .footer-logo {
-    background-color: aqua;
+    background-color: rgb(25, 25, 88);
     grid-area: logo;
 }
 .footer-menu {
-    background-color: tomato;
+    background-color: rgb(25, 25, 88);
     grid-area: menu;
 }
 .footer-menu nav ul {
@@ -207,16 +224,17 @@ body {
     color: white;
 }
 .footer-rrss {
-    background-color: brown;
+    background-color: rgb(25, 25, 88);
     grid-area: rrss;
 }
 
 .footer-nl {
-    background-color: greenyellow;
+    background-color: rgb(25, 25, 88);
     grid-area: susc;
+    color: white;
 }
 .footer-form {
-    background-color: blueviolet;
+    background-color: rgb(25, 25, 88);
     grid-area: form;
 }
 .contText h2{
