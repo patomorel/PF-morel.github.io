@@ -292,6 +292,16 @@ body {
 .estrategia {
     padding-bottom: 50px;
 }
+.price-col{
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media (max-width: 576px) {
+    .price-col {
+        flex-direction: column;
+    }
+    }
 
 #precios{
     display: grid;
