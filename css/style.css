@@ -77,46 +77,53 @@ body {
     background-image: linear-gradient(to right, aqua, yellow);
 
 }
-#gridtest {
+.grid {
+    margin: 80px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1px 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
     align-items: center;
-    align-content: center;
-    padding-bottom: 50px;
 
 }
-#gridtest img{
-    height: auto;
-    width: auto;
-    max-width: 100px;
-    max-height: 100px;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
+.grid > article {
+    background: #eee5e9;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    width: 250px;
+    transition: transform .3s;
 }
-@keyframes aparecer {
-    0% {
-        opacity: 0;
+.grid > article:hover {
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+.grid > article img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.text {
+    padding: 0 20px 20px;
+}
+.text h3 {
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
     }
-    100%{
-        opacity: 1;
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
     }
+
 }
-#gridtest .icon-testimonio{
-    justify-content: space-between;
-}
-#gridtest .test-name {
-    border-radius: 5px;
-    padding: 10px;
-    background-image: radial-gradient(yellow, aqua);
-}
-#gridtest p{
-    text-align: justify;
-    background-color: turquoise;
-    border-radius: 5px;
-    padding: 10px
+
+.grid > article{
+    text-align: center;
 }
 .banner2{
     width: 100%;
