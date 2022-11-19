@@ -287,22 +287,38 @@ body {
 .estrategia {
     padding-bottom: 50px;
 }
+
 #precios{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    align-items: center;
+   
 }
 #precios img{
     height: auto;
     width: auto;
     max-width: 100px;
     max-height: 100px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
 }
 #precios h3{
     font-size: 25px;
+    background-image: radial-gradient(yellow, aqua);
+    border-radius: 5px;
+    padding: 10px;
+    
 }
 #precios ul li{
     font-size: 20px;
+    
+}
+#precios ul{
+    border-radius: 5px;
+    background-color: turquoise;
 }
 
 .preciosPage {
@@ -314,6 +330,9 @@ body {
     background-size: 100% 100%;
     font-size: 40px;
 }
+
+
+
 .serviciosPage {
     color: black;
     text-align: center;
