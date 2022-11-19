@@ -101,6 +101,7 @@ body {
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    
 }
 .text {
     padding: 0 20px 20px;
@@ -205,50 +206,6 @@ body {
 }
 
 
-#footer{
-    display: grid;
-    grid-template-areas: 
-    "logo menu rrss"
-    "susc form form";
-    gap: 0;
-    height: 200px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-.footer-logo {
-    background-color: rgb(25, 25, 88);
-    grid-area: logo;
-}
-.footer-menu {
-    background-color: rgb(25, 25, 88);
-    grid-area: menu;
-}
-.footer-menu nav ul {
-    list-style: none;
-}
-.footer-menu nav ul li a{
-    display: flex;
-    text-decoration: none;
-    margin: 5px;
-    background-color: #8f00ff;
-    padding: 5px 5px;
-    border-radius: 5px;
-    color: white;
-}
-.footer-rrss {
-    background-color: rgb(25, 25, 88);
-    grid-area: rrss;
-}
-
-.footer-nl {
-    background-color: rgb(25, 25, 88);
-    grid-area: susc;
-    color: white;
-}
-.footer-form {
-    background-color: rgb(25, 25, 88);
-    grid-area: form;
-}
 .contText h2{
     text-align: center;
     font-size: 40px;
@@ -323,9 +280,7 @@ body {
     width: auto;
     max-width: 100px;
     max-height: 100px;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
+    
 }
 #precios h3{
     font-size: 25px;
@@ -373,4 +328,79 @@ body {
     font-size: 25px;
     padding-bottom: 10px;
     
+}
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(25, 25, 88);
+}
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pie-pagina .grupo1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.pie-pagina .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: rgb(143, 0, 255);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo1 .red-social a:hover{
+    color: gray;
+}
+.pie-pagina .grupo2 {
+    background-color: rgb(51, 108, 255);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.pie-pagina .grupo2 small{
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .pie-pagina .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+@media (max-width: 576px) {
+    .pie-pagina .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
 }
