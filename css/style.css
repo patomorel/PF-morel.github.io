@@ -37,7 +37,12 @@ body {
 #header .header__menu ul li a:hover {
     background-color: rgb(72, 208, 208);
 }
+@media (max-width: 576px) {
+    #header {
+        flex-direction: column;
+    }
 
+}
 .titulo{
     color: black;
     text-align: center;
