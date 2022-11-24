@@ -2,11 +2,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   
 }
 body {
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+    
 }
+/*
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-list{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.header-item{
+    margin: 15px;
+}
+.header-link{
+    text-decoration: none;
+    color: white;
+    background-color: #8f00ff;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+@media screen and (min-width: 768px) {
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 150px;
+    }
+    .header-list{
+        flex-direction: row;
+    }
+}
+*/
+
+/*
 #header{
     background-color: white;
     padding: 15px;
@@ -14,6 +56,8 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 150px;
+    width: 100%;
+    flex-direction: row;
 }
 #header .header__logo img{
     height: auto;
@@ -43,6 +87,9 @@ body {
     }
 
 }
+*/
+
+/*
 .titulo{
     color: black;
     text-align: center;
@@ -66,7 +113,11 @@ body {
 .ctacontacto:hover {
     background: #444;
 }
+*/
 
+
+
+/*
 
 .testimonio .test-title {
     font-size: 60px;
@@ -205,27 +256,312 @@ body {
 }
 
 
-.contText h2{
+
+*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-list{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    
+}
+.header-item{
+    margin: 15px;
+}
+.header-link{
+    text-decoration: none;
+    color: white;
+    background-color: #8f00ff;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.header-link:hover{
+    background-color: #4f137d;
+}
+
+.container-hero h1{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 70px;
+}
+.container-hero p{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.container-hero .hero-img img{
+    height: 500px;
+    margin-top: 20px;
+}
+.container-hero .hero-btn{
+    text-decoration: none;
+    color: white;
+    background-color: turquoise;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 25px;
+
+}
+.container-hero .hero-btn:hover{
+    background-color: aquamarine;
+    color: gray;
+}
+.container-hero{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonio .test-title {
+    font-size: 60px;
     text-align: center;
-    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, aqua, yellow);
+
+}
+
+.grid {
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+
+}
+.grid > article {
+    background: #eee5e9;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    width: 250px;
+    transition: transform .3s;
+    align-items: center;
+}
+.grid > article:hover {
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+.grid > article img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.text {
+    padding: 0 20px 20px;
+}
+.text h3 {
+    text-transform: uppercase;
+}
+
+
+
+.grid > article{
+    text-align: center;
+}
+
+.banner2{
+    width: 100%;
+    background: #336cff;
+    clear: both;
+    padding: 30px 50px 30px 50px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.banner2:hover {
+    background: #8f00ff;
+}
+.banner2 h3{
+    color: white;
+    font-size: 30px;
+}
+.banner2 a{
+    text-decoration: none;
+    color: #444;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.banner2 a:hover{
+    color: #fff;
+}
+.quehacemos {
+    font-size: 30px;
+    text-align: center;
     padding-top: 50px;
+}
+#gridhacemos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 20px;
+    align-items: center;
+    align-content: center;
     padding-bottom: 50px;
-  
-}
-.contText h3{
-    text-align: center;
-    font-size: 20px
-
 
 }
-.contText{
-    color: black;
+#gridhacemos img{
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
+
+}
+#gridhacemos .icon-hacemos{
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#gridhacemos h3 {
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 10px;
+    background-image: linear-gradient(to left, aqua, yellow);
+}
+#gridhacemos p{
+    text-align: justify;
+    background-color: turquoise;
+    border-radius: 5px;
+    padding: 10px
+ }
+ .cont-reu{
+    margin: 0 auto;
+    position: relative;
+ }
+ .reu h2 {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 250px;
-    background-image: url("../images/banner-contacto-estrategia.png");
-    background-size: 100% 100%;
-    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, aqua, yellow);
+    width: 100%;
+    
+}
+.reu h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.form{
+    background-color: #336cff;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 3em;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 /30%);
+    text-align: center;
+}
+.form h2{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+.form p{
+    font-size: 25px;
+}
+
+.form-label{
+    font-size: 20px;
+}
+.form-input{
+    width: 100%;
+}
+.form-submit {
+    padding: 5px 20px;
+}
+/*
+#formhome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.datosPersonales {
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+*/
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(25, 25, 88);
+}
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pie-pagina .grupo1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.pie-pagina .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: rgb(143, 0, 255);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo1 .red-social a:hover{
+    color: gray;
+}
+.pie-pagina .grupo2 {
+    background-color: rgb(51, 108, 255);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.pie-pagina .grupo2 small{
+    font-size: 15px;
 }
 .quienesSomos {
     color: white;
@@ -263,10 +599,14 @@ body {
 @media (max-width: 576px) {
     .price-col {
         flex-direction: column;
+        justify-content: center;
+        padding-left: 35px;
     }
     }
 
-#precios{
+    
+/*
+    #precios{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -302,10 +642,50 @@ body {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 250px;
-    background-image: url("../images/banner-precio-3.jpeg");
     background-size: 100% 100%;
     font-size: 40px;
 }
+*/
+
+.container-precios h2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 70px;
+}
+.container-precios p{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.container-precios .precios-img img{
+    height: 500px;
+    margin-top: 20px;
+}
+.container-precios .precios-btn{
+    text-decoration: none;
+    color: white;
+    background-color: turquoise;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 25px;
+
+}
+.container-precios .precios-btn:hover{
+    background-color: aquamarine;
+    color: gray;
+}
+.container-precios{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
 
 
 
@@ -318,6 +698,143 @@ body {
     background-size: 100% 100%;
     font-size: 40px;
 }
+
+.contText h2{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+}
+.contText h3{
+    text-align: center;
+    font-size: 20px
+
+
+}
+.contText{
+    color: black;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 250px;
+    background-image: url("../images/banner-contacto-estrategia.png");
+    background-size: 100% 100%;
+    font-size: 40px;
+}
+@media (max-width: 768px) {
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .pie-pagina .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+@media (max-width: 576px) {
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .pie-pagina .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+}
+@media (max-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 10px;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .container-hero{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .container-hero .hero-btn{
+        align-items: center;
+    }
+    .container-hero h1{
+        font-size: 35px;
+        margin: 5px;
+    }
+    .container-hero .hero-img img{
+        width: 250px;
+        height: 250px;
+    }
+    .container-hero p{
+        font-size: 25px;
+        margin: 20px 5px;
+    }
+    .testimonio .test-title{
+        font-size: 35px;
+        width: 100%;
+    }
+    .testimonio{
+        width: 100%;
+    }
+    .container-precios{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .container-precios .precios-btn{
+        align-items: center;
+    }
+    .container-precios h2{
+        font-size: 35px;
+        margin: 5px;
+    }
+    .container-precios .precios-img img{
+        width: 250px;
+        height: 250px;
+    }
+    .container-precios p{
+        font-size: 25px;
+        margin: 20px 5px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header-list{
+        flex-direction: row;
+        
+    }
+    .header-item{
+        font-size: 25px;
+    }
+   
+   
+}
+
+
+/*
 #formhome {
     display: grid;
     grid-template-columns: auto;
@@ -403,3 +920,4 @@ body {
     }
 
 }
+*/

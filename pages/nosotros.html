@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header id="header">
-        <div class="header__logo">
+    <header class="header">
+        <div class="header-logo">
             <a href="../index.html"><img src="../images/lerom-logo-200x120.png" alt=""></a>
         </div>
-        <nav class="header__menu">
-            <ul>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./precios.html">Precios</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+        <nav class="header-menu">
+            <ul class="header-list">
+                <li class="header-item"><a href="./nosotros.html" class="header-link">Nosotros</a></li>
+                <li class="header-item"><a href="./servicios.html" class="header-link">Servicios</a></li>
+                <li class="header-item"><a href="./precios.html" class="header-link">Precios</a></li>
+                <li class="header-item"><a href="./contacto.html" class="header-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -47,28 +47,43 @@
         <div class="reu">
             <h2>¿Coordinamos una reu?</h2>
             <h3>Danos tus datos y te contactaremos a la brevedad</h3>
-            <br>
+            
         </div>
         </section>
         
-        <section id="formhome">
-            <legend class="datosPersonales">Datos personales</legend>
-            <form action="" method="get">
-                <label for="nombre" class="nombre">Nombre</label>
-                <input type="text" name="" id="nombre" placeholder="Nombre y apellido" required>
-                <br>
-                <label for="mail">Email</label>
-                <input type="mail" name="" id="mail" placeholder="Ingresa tu email" required>
-                <br>
-                <label for="telefono">Teléfono</label>
-                <input type="text" name="" id="telefono" placeholder="+56912345678" required>
-                <br>
-                <label for="multi">Comentarios</label>
-                <textarea name="multi" id="multi" cols="30" rows="10"></textarea>
-                <br>
-                <input type="submit" value="Quiero que me contacten">
-                </form>
-        </section>
+        <form class="form">
+            <h2>Formulario de contacto</h2>
+            <p>Te contactaremos muy pronto</p>
+        
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" id="name" class="form-input">
+                    
+                    <span class="form-line"></span>
+                </div>
+                <div class="form-group">
+                    <label for="name" class="form-label">Teléfono</label>
+                    <input type="text" id="telefono" class="form-input">
+                    
+                    <span class="form-line"></span>
+                </div>
+                <div class="form-group">
+                    <label for="name" class="form-label">Email</label>
+                    <input type="text" id="email" class="form-input">
+                    
+                    <span class="form-line"></span>
+                </div>
+                <div class="form-group">
+                    <label for="name" class="form-label">Comentarios</label>
+                    <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+                    
+                    <span class="form-line"></span>
+                </div>
+                <input type="submit" class="form-submit" value="Enviar">
+            </div>
+        
+        </form>
 
         <footer class="pie-pagina">
             <div class="grupo1">
