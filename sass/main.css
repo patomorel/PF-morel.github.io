@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .header-logo {
+  padding-top: 20px;
+}
+.header .header-list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+.header .header-item {
+  margin: 15px;
+}
+.header .header-link {
+  text-decoration: none;
+  color: white;
+  background-color: #8f00ff;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+.header .header-link:hover {
+  background-color: #4f137d;
+  color: white;
+}
+
+.container-hero {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-hero .hero-top h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 48px;
+  text-align: center;
+}
+.container-hero .hero-top h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container-hero .hero-top p {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.container-hero .hero-top .hero-btn {
+  align-items: center;
+  font-size: 25px;
+  justify-content: center;
+  display: flex;
+}
+.container-hero .hero-top .hero-btn-cta {
+  text-decoration: none;
+  color: white;
+  background-color: turquoise;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+.container-hero .hero-top .hero-btn-cta:hover {
+  background-color: aquamarine;
+  color: gray;
+}
+.container-hero .hero-img img {
+  width: 90%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.container-hero .hero-img-nosotros img {
+  width: 300px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container-hero .hero-img-servicios img {
+  width: 300px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container-hero .hero-img-precios img {
+  width: 300px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container-hero .hero-img-contacto img {
+  width: 300px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.testimonio {
+  background-image: linear-gradient(to right, aqua, yellow);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.testimonio .test-title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.grid article {
+  background: #eee5e9;
+  border: none;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  width: 250px;
+  transition: transform 0.3s;
+  align-items: center;
+  text-align: center;
+}
+.grid article:hover {
+  transform: translateY(-15px);
+  box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.3);
+}
+.grid img {
+  width: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.grid .text {
+  padding: 0 20px 20px;
+}
+.grid h3 {
+  text-transform: uppercase;
+}
+
+.banner2 {
+  width: 100%;
+  background: #336cff;
+  clear: both;
+  padding: 30px 50px 30px 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.banner2 h3 {
+  color: white;
+  font-size: 30px;
+}
+.banner2 a {
+  text-decoration: none;
+  color: #444;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.banner2 a:hover {
+  color: #fff;
+}
+
+.banner2:hover {
+  background: #8f00ff;
+}
+
+.quehacemos {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+  text-transform: uppercase;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.reu {
+  display: flex;
+  flex-direction: column;
+}
+.reu h2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  margin-top: 20px;
+  background-image: linear-gradient(to right, aqua, yellow);
+  width: 100%;
+}
+.reu h3 {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: #336cff;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 4em 3em;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.form p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.form .form-label {
+  font-size: 20px;
+}
+.form .form-input {
+  width: 100%;
+}
+.form .form-submit {
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.pie-pagina {
+  width: 100%;
+  background-color: rgb(25, 25, 88);
+}
+.pie-pagina .grupo1 {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 0px 0px;
+}
+.pie-pagina .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .box figure img {
+  width: 200px;
+}
+.pie-pagina .box h2 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 25px;
+  text-align: center;
+}
+.pie-pagina .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+}
+.pie-pagina .box .red-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pie-pagina .box .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  margin-right: 10px;
+  background-color: rgb(143, 0, 255);
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .box .red-social a:hover {
+  color: gray;
+}
+.pie-pagina .grupo2 {
+  background-color: rgb(51, 108, 255);
+  padding: 15px 10px;
+  text-align: center;
+  color: white;
+}
+.pie-pagina .grupo2 small {
+  font-size: 15px;
+}
+
+.equipo {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.equipo .box-equipo {
+  text-align: center;
+}
+.equipo h2 {
+  margin-bottom: 10px;
+}
+
+.container-servicios {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.container-servicios .servicios {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.container-servicios .servicios i {
+  margin: 10px 10px;
+}
+
+.price-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.price-col .card .card-body {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}/*# sourceMappingURL=main.css.map */
