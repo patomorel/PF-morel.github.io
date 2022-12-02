@@ -159,9 +159,11 @@ body {
     box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
 }
 .grid > article img {
-    width: 100%;
+    width: 150px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
 }
 .text {
@@ -713,7 +715,7 @@ body {
         padding-bottom: 10px;
     }
     .grid > article img {
-        width: 70%;
+        width: 150px;
     }
     .quehacemos h2{
         font-size: 40px;
