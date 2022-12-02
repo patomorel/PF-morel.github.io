@@ -88,15 +88,52 @@ body {
     background-color: aquamarine;
     color: gray;
 }
+.container-hero .hero-top h2{
+    font-size: 48px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container-hero .hero-img-nosotros img{
+    width: 300px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.container-hero .hero-img-servicios img{
+    width: 300px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.container-hero .hero-img-precios img{
+    width: 300px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.container-hero .hero-img-contacto img{
+    width: 300px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 .testimonio{
     background-image: linear-gradient(to right, aqua, yellow);
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .testimonio .test-title {
     font-size: 30px;
     text-align: center;
+    
 }
 .grid {
     
@@ -294,6 +331,7 @@ body {
 .pie-pagina .grupo2 small{
     font-size: 15px;
 }
+/*
 .container-nosotros{
     display: flex;
     flex-direction: column;
@@ -315,6 +353,7 @@ body {
 .nosotros-img img{
     width: 100%;
 }
+*/
 .equipo {
     display: grid;
     grid-template-rows: 1fr;
@@ -365,7 +404,7 @@ body {
     }
 */
     
-
+/*
 .container-precios{
     display: flex;
     flex-direction: column;
@@ -393,6 +432,7 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+*/
 .container-precios .precios-btn{
     
     align-content: center;
@@ -420,6 +460,7 @@ body {
     margin-top: 10px;
     padding: 10px;
 }
+/*
 .serviciosPage {
     display: flex;
     flex-direction: column;
@@ -449,6 +490,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+*/
 .container-servicios{
     display: flex;
     flex-direction: column;
@@ -463,6 +505,7 @@ body {
     margin: 10px;
     
 }
+/*
 .container-contacto{
     display: flex;
     flex-direction: column;
@@ -485,7 +528,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+*/
 
 /*
 @media (max-width: 768px) {
@@ -708,6 +751,7 @@ body {
         text-align: left;
         
     }
+    /*
     .container-nosotros{
         display: flex;
         flex-direction: row;
@@ -723,6 +767,21 @@ body {
     .container-nosotros .quienesSomos h3{
         text-align: left;
         padding-top: 100px;
+    }*/
+    .container-hero .hero-top h2{
+        text-align: left;
+    }
+    .container-hero .hero-img-nosotros img{
+        width: 700px;
+    }
+    .container-hero .hero-img-servicios img{
+        width: 700px;
+    }
+    .container-hero .hero-img-precios img{
+        width: 700px;
+    }
+    .container-hero .hero-img-contacto img{
+        width: 700px;
     }
     .equipo{
         display: flex;
