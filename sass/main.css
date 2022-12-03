@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
   font-family: "Roboto", sans-serif;
   width: 100%;
 }
@@ -363,4 +363,119 @@
   text-align: center;
   padding: 20px;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 576px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header .header-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .container-hero {
+    display: flex;
+    flex-direction: row;
+  }
+  .container-hero .hero-top h1 {
+    text-align: left;
+  }
+  .container-hero .hero-top p {
+    text-align: left;
+  }
+  .container-hero .hero-top .hero-btn {
+    float: left;
+  }
+  .container-hero .hero-top h2 {
+    text-align: left;
+  }
+  .container-hero .hero-img-nosotros img {
+    width: 700px;
+  }
+  .container-hero .hero-img-servicios img {
+    width: 700px;
+  }
+  .container-hero .hero-img-precios img {
+    width: 700px;
+  }
+  .container-hero .hero-img-contacto img {
+    width: 700px;
+  }
+  .testimonio .test-title {
+    font-size: 50px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-around;
+  }
+  .grid article {
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+  .grid article h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .grid article img {
+    width: 150px;
+  }
+  .quehacemos h2 {
+    font-size: 40px;
+  }
+  .reu h2 {
+    font-size: 40px;
+  }
+  .reu h3 {
+    font-size: 30px;
+  }
+  .form {
+    max-width: 900px;
+  }
+  .form .form-container .form-group {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .form .form-container .form-group .form-label {
+    padding-right: 10px;
+  }
+  .pie-pagina .grupo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    align-items: center;
+  }
+  .pie-pagina .grupo1 .box h2 {
+    text-align: left;
+    padding-left: 7px;
+  }
+  .pie-pagina .grupo1 .box p {
+    text-align: left;
+  }
+  .equipo {
+    display: flex;
+    flex-wrap: row;
+    margin: 40px;
+    gap: 10px;
+  }
+  .container-servicios {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+  }
+  .container-servicios .servicios {
+    width: 450px;
+  }
+  .container-servicios .servicios p {
+    margin: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */

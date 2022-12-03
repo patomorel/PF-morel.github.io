@@ -676,7 +676,6 @@ body {
     .header-list{
         display: flex;
         flex-direction: row;
-        
     }
     .container-hero{
         display: flex;
@@ -699,9 +698,7 @@ body {
         flex-direction: row;
         margin-bottom: 20px;
         justify-content: space-around;
-        
     }
-    
     .grid > article {
         width: 400px;
         align-items: center;
@@ -727,7 +724,6 @@ body {
     .form{
         max-width: 900px;
     }
-   
     .form .form-container .form-group{
         margin: 20px;
         display: flex;
@@ -751,23 +747,6 @@ body {
         text-align: left;
         
     }
-    /*
-    .container-nosotros{
-        display: flex;
-        flex-direction: row;
-    }
-    .container-nosotros .quienesSomos{
-        background-image: linear-gradient(to right, aqua, yellow);
-    }
-    
-    .container-nosotros .quienesSomos h2{
-        text-align: left;
-        padding-top: 20px;
-    }
-    .container-nosotros .quienesSomos h3{
-        text-align: left;
-        padding-top: 100px;
-    }*/
     .container-hero .hero-top h2{
         text-align: left;
     }
