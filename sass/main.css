@@ -470,12 +470,23 @@ body {
   .container-servicios {
     display: flex;
     flex-direction: row;
-    margin: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
+    gap: 10px;
   }
   .container-servicios .servicios {
     width: 450px;
   }
   .container-servicios .servicios p {
     margin: 15px;
+  }
+  .price-col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
+    gap: 10px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -491,7 +491,10 @@ body {
     .container-servicios{
         display: flex;
         flex-direction: row;
-        margin: 50px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 40px;
+        gap: 10px;
             .servicios{
                 width: 450px;
                     p{
@@ -499,5 +502,13 @@ body {
                     }
             }
             
+    }
+    .price-col{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 40px;
+        gap: 10px;
     }
 }
