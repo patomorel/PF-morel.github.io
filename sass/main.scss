@@ -5,7 +5,6 @@
 }  
 body {
     font-family: 'Roboto', sans-serif;
-    width: 100%;
 }
 .header{
     display: flex;
@@ -124,15 +123,21 @@ body {
             margin-bottom: 20px;
         }
 }
-.testimonio{
+@mixin testimonio{
     background-image: linear-gradient(to right, aqua, yellow);
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
-        .test-title {
-            font-size: 30px;
-            text-align: center; 
-    }
+}
+.testimonio{
+    @include testimonio;
+}
+@mixin test-title{
+    font-size: 30px;
+    text-align: center;
+}
+.test-title{
+    @include test-title;
 }
 .grid {
     

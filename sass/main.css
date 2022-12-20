@@ -6,7 +6,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  width: 100%;
 }
 
 .header {
@@ -126,7 +125,8 @@ body {
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
-.testimonio .test-title {
+
+.test-title {
   font-size: 30px;
   text-align: center;
 }
